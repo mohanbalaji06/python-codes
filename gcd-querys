@@ -1,0 +1,14 @@
+
+
+def solve(N,Q,A,query):
+    sm=0
+    for i in range(Q):
+        
+        sm+=gcd(A[query[i][0],A[query[i][1]])
+    
+    return sm
+def gcd(a,b):
+    if(b==0):
+        return a
+    else:
+        return gcd(b,a%b)
