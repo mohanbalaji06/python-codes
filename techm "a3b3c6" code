@@ -1,0 +1,19 @@
+
+x=[]
+y=[]
+n=list(input1)
+final=[]
+for i in n:
+    if not i.isdigit():
+        x.append(i)
+for i in n:
+    if i.isdigit():
+        y.append(int(i))
+for i in range(len(x)):
+    final.append(x[i]*y[i])
+if len(final)>=input2:
+    return final[input2-1]
+else:
+    return -1
+
+    
