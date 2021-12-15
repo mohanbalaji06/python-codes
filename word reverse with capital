@@ -1,0 +1,23 @@
+
+def fn():
+    
+    
+   
+    x=input1.split(' ')
+    y=[]
+    
+    for i in x:
+        t=i[::-1]
+        y.append(t.capitalize())
+    
+    n=""
+    for i in range(len(y)):
+        if i!=len(y)-1:
+            n=n+y[i]+" "
+        else:
+            n=n+y[i]
+    return n
+    
+    
+
+print(fn())
