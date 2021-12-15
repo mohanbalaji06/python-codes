@@ -1,0 +1,22 @@
+def two(a,b):
+    print(a,"+",b,"=",a+b)
+def three(a,b,c):
+    print(a,"+",b,"+",c,"=",a+b+c)
+def five(a,b,c,d,e):
+    print(a,"+",b,"+",c,"+",d,"+",e,"=",a+b+c+d+e)
+def six(a,b,c,d,e,f):
+    print(a,"+",b,"+",c,"+",d,"+",e,"+",f,"=",a+b+c+d+e+f)
+
+
+
+
+
+
+x=[]
+for i in range(6):
+    x.append(int(input()))
+
+two(x[0],x[1])
+three(x[0],x[1],x[2])
+five(x[0],x[1],x[2],x[3],x[4])
+six(x[0],x[1],x[2],x[3],x[4],x[5])
