@@ -1,0 +1,15 @@
+def breakPalindrome(palindromStr):
+    if len(palindromStr)==1:
+        return ''
+    l,r=0,len(palindromStr)-1
+    mid=len(palindromStr)//2
+    S=list(palindromStr)
+    while l<mid and palindromStr[l]=='a':
+        l +=1
+    if l != mid:
+        S[l]='a'
+        return ''.join(S)
+    
+    S[-1]='b'
+    
+    return ''.join(S)
