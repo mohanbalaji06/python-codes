@@ -1,0 +1,13 @@
+def solve(X,arr,query_values):
+    z=[]
+    for i in query_values:
+        if arr.count(X)>=i:
+            t=i
+            cnt=0
+            for j in range(len(arr)):
+                if X==arr[j] and cnt==t:
+                    z.append(j)
+                    cnt +=1
+        else:
+            z.append(-1)
+    return z
