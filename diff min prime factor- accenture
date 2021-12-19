@@ -1,0 +1,17 @@
+import math
+
+def DiffMinPrimeFactor(n):
+    m=n
+    x=[]
+    while n % 2 == 0:
+            x.append(2)
+            n = n / 2
+    for i in range(3,int(math.sqrt(n))+1,2):
+        while n % i== 0:
+            x.append(i)
+            n = n / i
+   
+    t=m-min(x)
+    return t
+    
+print(DiffMinPrimeFactor(350))
