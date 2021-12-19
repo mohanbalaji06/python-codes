@@ -1,0 +1,10 @@
+def MinMaxInTwoArrays(arr1,arr2,k):
+    cnt=0
+    gnt=0
+    for i in arr1:
+        if k<i:
+            cnt=cnt+1
+    for i in arr2:
+        if k>i:
+            gnt=gnt+1
+    return max(cnt,gnt)
