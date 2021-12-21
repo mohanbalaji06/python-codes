@@ -1,0 +1,5 @@
+def lastLetters(word):
+    x=word[-1]+' '
+    x +=word[-2]
+    
+    return x
