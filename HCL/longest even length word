@@ -1,0 +1,12 @@
+def longestEvenWord(sentence):
+    
+    words=sentence.split(' ')
+    x=""
+    n=0
+    
+    for i in words:
+        if len(i)%2==0:
+            if len(i)>n:
+                x=i
+                n=len(i)
+    return x
