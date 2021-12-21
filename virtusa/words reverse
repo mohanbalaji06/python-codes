@@ -1,0 +1,13 @@
+
+x=inupt1.split(' ')
+
+y=[]
+for i in x:
+    y.append(i[::-1])
+s=""
+for i in range(len(y)):
+    if i != len(y-1):
+        s +=y[i]+" "
+    else:
+        s +=y[i]
+return s
