@@ -1,0 +1,17 @@
+def findmaximum(input1,input2,input3):
+    input2=list(input2)
+    ans=0
+    for i in range(input3):
+        if input2[i]=='P':
+            ans=ans+input1[i]
+        else:
+            ans=ans-input1[i]
+    mag=0
+    if ans>0:
+        mag=ans*100
+    else:
+        mag=-(ans*100)
+    return mag
+
+print(findmaximum([4,3,5],'PNP',3))
+            
