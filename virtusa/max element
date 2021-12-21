@@ -1,0 +1,14 @@
+def maxElement(input1):
+    input1=list(input1)
+    n=0
+    c=''
+    
+    for i in input1:
+        if input1.count(i)>n:
+            n=input1.count(i)
+            c=i
+    return c
+
+
+
+print(maxElement('puffxx'))
