@@ -1,0 +1,55 @@
+class Team:
+    def __init__(self,owner,value,id,name):
+        self.owner=owner
+        self.value=value
+        self.id=id
+        self.name=name
+class League:
+    def __init__(self,leagueName,teamList):
+        self.leagueName=leagueName
+        self.teamList=teamList
+    def findMinimumTeamById(self):
+        x=min(self.teamList,key=lambda a:a.id)
+        if len(self.teamList)==0:
+            return None
+        else:
+            return x
+    def sortTeamById(self):
+        m=[]
+        x=sorted(self.teamList,key=lambda a:a.id)
+        for i in x:
+            m.append(i.id)
+        if len(self.teamList)==0:
+            return None
+        else:
+            return m
+
+if __name__=="__main__":
+    n=int(input())
+    teamList=[]
+    for i in range(n):
+        id=int(input())
+        name=input()
+        owner=input()
+        value=float(input())
+        t=Team(owner,value,id,name)
+        teamList.append(t)
+        
+    T=League("ABC",teamList)
+    x=T.findMinimumTeamById()
+    y=T.sortTeamById()
+    if x!=None:
+        print(x.id)
+        print(x.name)
+        print(x.owner)
+        print(x.value)
+    else:
+        print("No Data Found")
+    if y!=None:
+        for i in y:
+            print(i)
+    else:
+        print("No Data Found")
+    
+        
+    
