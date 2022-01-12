@@ -1,0 +1,13 @@
+n=input()
+
+x=list(n)
+y=[]
+for i range(len(x)):
+    x[i]=int(x[i])
+for i in x:
+    if i%2!=0:
+        y.append(i)
+m=0
+for i in y:
+    m +=i
+print(m)
