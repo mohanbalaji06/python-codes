@@ -1,0 +1,8 @@
+n=int(input())
+x=list(map(int,input().split(' ')))
+sm=0
+for i in range(len(x)):
+    for j in range(i,len(x)):
+        if x[i]+x[j]>sm:
+            xm=x[i]+x[j]
+print(sm)
