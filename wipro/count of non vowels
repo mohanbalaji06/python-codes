@@ -1,0 +1,9 @@
+n=int(input())
+x=list(map(str,input().split(' ')))
+lst=['a','e','i','o','u','A','E','I','O','U']
+
+cnt=0
+for i in x:
+    if i not in lst:
+        cnt +=1
+print(cnt)
