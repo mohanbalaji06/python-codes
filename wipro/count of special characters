@@ -1,0 +1,9 @@
+s=input()
+s=list(s)
+
+x=['!','@','#','$','%','^','&','*','(',')']
+sm=0
+for i in s:
+    if i in x:
+        sm +=1
+print(sm)
