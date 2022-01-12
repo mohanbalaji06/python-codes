@@ -1,0 +1,22 @@
+x=int(input())
+y=int(input())
+
+x2=x%10
+x1=x//10
+y2=y%10
+y1=y//10
+
+a=(x1+y1)*10+(x2+y2)
+b=(x1-y1)*10+(x2-y2)
+c1=str((x1*y1))
+c2=str((x2*y2))
+c=c1+c2
+c=int(c)
+if a<0:
+    a=abs(a)
+if b<0:
+    b=abs(b)
+if c<0:
+    c=abs(c)
+
+print(a,b,c)
