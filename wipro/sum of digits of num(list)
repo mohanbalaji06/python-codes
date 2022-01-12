@@ -1,0 +1,14 @@
+n=int(input())
+x=list(map(int,input().split(' '))
+
+y=[]
+
+for i in x:
+    a=i
+    sm=0
+    while a>0:
+        t=a%10
+        sm +=t
+        a=a//10
+    y.append(sm)
+print(*y)
