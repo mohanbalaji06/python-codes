@@ -1,0 +1,27 @@
+
+def convert(x):
+    inverse_s = ''
+    for i in x:
+        if i == '0':
+            inverse_s += '1'
+        else:
+            inverse_s += '0'
+    return inverse_s
+
+n=int(input())
+x=list(map(int,input().split(' ')))
+y=[]
+inter=[]
+otp=[]
+for i in x:
+    y.append(bin(i).replace("0b",""))
+
+for i in y:
+    t=convert(i)
+    inter.append(int(t))
+for i in inter:
+    m=int(i,2)
+    otp.append(m)
+print(*otp)
+
+
