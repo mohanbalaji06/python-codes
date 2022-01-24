@@ -1,0 +1,18 @@
+
+def findTriplets(N):
+    count=0
+    x=[]
+    for i in range(1,N+1):
+        x.append(i)
+    t=len(x)
+    print(x)
+    m=N
+    for i in range(t-2):
+        for j in range(i,t):
+            for k in range(j,t):
+                if (x[i]*x[j]*x[k])<=m:
+                    
+                    count +=1
+    return count
+print(findTriplets(5))
+        
