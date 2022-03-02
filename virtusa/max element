@@ -1,13 +1,20 @@
 def maxElement(input1):
-    input1=list(input1)
-    n=0
-    c=''
+    x=list(input1)
+    x=set(x)
+    x=list(x)
+    n=[]
+    for i in x:
+        n.append(input1.count(i))
+    c=max(n)
+    if n.count(c)>1:
+        return 0
+    else:
+        for i in input1:
+            if input1.count(i)==c:
+                return i
+                break
+
     
-    for i in input1:
-        if input1.count(i)>n:
-            n=input1.count(i)
-            c=i
-    return c
 
 
 
