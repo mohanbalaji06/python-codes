@@ -1,0 +1,16 @@
+
+
+x=int(input())
+n=int(input())
+t=[0,1]
+for i in range(2,100):
+    if t[-1]==x:
+        break
+    else:
+        t.append(t[i-1]+t[i-2])
+print(t)
+
+y=t.index(x)
+for i in range(y+1,x+n+1):
+    t.append(t[i-1]+t[i-2])
+print(t[-1])
