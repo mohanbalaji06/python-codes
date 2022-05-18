@@ -1,0 +1,8 @@
+from datetime import datetime
+
+def reorderDates(dates):
+    
+    dates.sort(key = lambda date: datetime.strptime(date, '%m-%Y'))
+    return dates
+
+print(reorderDates(['04-1990','10-1890','02-1890']))
